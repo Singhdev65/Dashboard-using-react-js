@@ -1,0 +1,72 @@
+.team {
+  flex: 1;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__TitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__AddButton {
+  width: 100px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.team__cardWrapper {
+  display: flex;
+}
+
+.team__card {
+  height: 200px;
+  width: 280px;
+  border-radius: 15px;
+  transition: all 0.5s;
+  margin-left: 1rem;
+}
+
+.team__cardImg {
+  height: 200px;
+  width: 280px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.team__cardImg > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.team__card:hover .team__cardImg {
+  height: 50%;
+  transition: all 0.5s;
+}
+
+.team__card:hover .team__cardImg img {
+  top: -15px;
+  left: -50px;
+}
+
+.team__cardInfo {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: #007bff;
+  background-color: #fff;
+  position: relative;
+}

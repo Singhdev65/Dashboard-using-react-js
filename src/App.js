@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Home from './components/Feed/Home';
+import Sidebar from './components/Sidebar/Sidebar';
+import User from './components/Sidebar/User';
+import Topbar from './components/topbar/Topbar';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CreateProject from './components/Sidebar/CreateProject';
+import Team from './components/Sidebar/Team';
+import AddTeam from './components/Sidebar/AddTeam';
+import Projects from './components/Sidebar/Projects';
+import EditProject from './components/Sidebar/EditProject';
+import { useStateValue } from './StateProvider';
+import Login from './components/Login';
+import Register from './components/Register';
 
-function App() {
+const App = () =>  {
+  const [hamburger, setHamburger] = useState(true);
+  const [{ user }] = useStateValue();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+    {(!user) ? (<Login />) : (
+    <Router>
+    <Topbar openBurger={()=> setHamburger(!hamburger)}/>
+    <div className="app__body">
+    {hamburger && <Sidebar />}
+    <Switch>
+    <Route path="/" exact component={Home} />
+    <Route path="/User" component={User} />
+    <Route path="/CreateProject" component={CreateProject} />
+    <Route path="/Team" component={Team} />
+    <Route path="/AddTeam" component={AddTeam} />
+    <Route path="/Projects" component={Projects} />
+    <Route path="/EditProject/:editId" component={EditProject} />
+    </Switch>
+    </div>
+    </Router>
+    )}
     </div>
   );
 }

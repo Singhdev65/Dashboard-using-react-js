@@ -1,0 +1,11 @@
+.chart {
+  flex: 0.6;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 1px 2px 3px #bfbfbf;
+  background: linear-gradient(-45deg, #1897c1, #f9ad69);
+}
+
+.chart__title {
+  margin-bottom: 1rem;
+}

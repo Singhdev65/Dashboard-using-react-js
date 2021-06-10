@@ -1,0 +1,26 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 0.2rem;
+  padding: 0 2rem;
+}
+
+.sidebarOption:hover {
+  background: linear-gradient(0deg, #f9ad69, #1897c1);
+}
+
+.sidebarOption__title {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.sidebarOption.active,
+.sidebarOption:hover {
+  border-left: 5px solid #1897c1;
+}
+
+.sidebarOption__icon {
+  color: #fff;
+}

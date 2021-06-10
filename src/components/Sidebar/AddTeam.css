@@ -1,0 +1,61 @@
+.add {
+  flex: 1;
+  padding: 20px;
+  max-height: 100vh;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userUpdateForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: whitesmoke;
+  height: 90%;
+}
+
+.userUpdateItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 2.5rem;
+}
+
+.userUpdateItem > label {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.userUpdateInput {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid rgb(24, 201, 207);
+}
+
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userUpdateButton {
+  width: 300px;
+  border-radius: 5px;
+  height: 2.2rem;
+  border: none;
+  padding: 25px;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

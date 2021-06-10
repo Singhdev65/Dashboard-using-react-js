@@ -1,0 +1,19 @@
+.newmember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.newmember__info > h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.newmember__info > h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: whitesmoke;
+  margin-top: 0.2rem;
+}
