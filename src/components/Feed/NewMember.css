@@ -8,12 +8,12 @@
 .newmember__info > h3 {
   font-size: 1.2rem;
   font-weight: 800;
-  color: #fff;
+  color: #000;
 }
 
 .newmember__info > h6 {
   font-size: 1.2rem;
   font-weight: 300;
-  color: whitesmoke;
+  color: #000;
   margin-top: 0.2rem;
 }

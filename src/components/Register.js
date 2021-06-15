@@ -4,7 +4,7 @@ import db, { auth, provider } from '../firebase';
 import {actionTypes} from '../reducer';
 
 const Register = () => {
-  const [users, setUsers] = useState("");
+  // const [users, setUsers] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [position, setPosition] = useState("");

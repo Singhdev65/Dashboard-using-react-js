@@ -38,6 +38,7 @@
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   margin-left: 20px;
+  /* background-color: #fff !important; */
 }
 
 .userShowTop {
@@ -73,7 +74,7 @@
 .userShowTitle {
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: #000;
 }
 
 .userShowInfo {
@@ -100,6 +101,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  background-color: #fff !important;
 }
 
 .userUpdateItem {
@@ -124,6 +126,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .userUpdateButton {

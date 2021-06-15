@@ -32,7 +32,7 @@ const Table = () => {
   
     return (
         <div className="table" style={{ height: '100%',
-        width: '100%', background: "linear-gradient(0deg, #1897c1, #f9ad69)"}}>
+        width: '100%'}}>
       <DataGrid disableSelectionOnClick rows={userRows} columns={columns} pageSize={10} checkboxSelection />
     </div>
     )

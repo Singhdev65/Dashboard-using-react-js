@@ -3,7 +3,7 @@ import React from 'react';
 import './NewMember.css';
 import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
 
-const NewMember = ({name, position}) => {
+const NewMember = ({ name, position }) => {
     return (
         <div className="newmember">
             <Avatar />

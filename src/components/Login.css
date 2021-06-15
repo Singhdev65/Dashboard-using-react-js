@@ -13,11 +13,17 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  
+}
+
+.login__headerLeft > h2{
+  font-weight: bolder;
 }
 
 .login__headerLeft > h2 > span {
   color: lime;
   margin: 0 7px;
+  font-weight: bolder;
 }
 
 .login__headerRight {
@@ -28,6 +34,7 @@
 
 .login__headerRight > p {
   margin: 0 15px;
+  font-size: 1.7rem;
 }
 
 .login__body {
@@ -57,15 +64,3 @@ form > input {
   margin-top: 1rem;
 }
 
-.form__checkbox {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-}
-
-.form__checkbox > input {
-  margin-right: 0.5rem;
-}
-
-.form__checkbox > span {
-  font-weight: 300;
-}

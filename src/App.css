@@ -1,7 +1,6 @@
 .app__body {
   display: flex;
   justify-content: center;
-  background: linear-gradient(-75deg, #1897c1, #f9ad69);
 }
 
 ::-webkit-scrollbar {
